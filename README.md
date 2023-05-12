@@ -6,6 +6,7 @@ tion fees, and slippage so that earnings are guaranteed. The bot supports arbitr
 V2 and Sushiswap. We include some example tokens in the code. By default, we monitor the price of wBTC and LUSD. To add customized tokens, please go to common.py. To run this bot:
 
 ```
+$ cd python_modules
 $ python optimal_flashloan.py
 ```
 
