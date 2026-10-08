@@ -1,7 +1,8 @@
 ### Constants ###
+import os
 
 # goerli rpc url 
-RPC_URL = "https://goerli.infura.io/v3/XXXXX"
+RPC_URL = os.environ.get("RPC_URL", "https://goerli.infura.io/v3/XXXXX")
 
 AUX_TOKEN = "LUSD"
 
@@ -39,8 +40,8 @@ SUSHISWAP_ETH_POOL_ADDRESS = "0xF934c7fbc28267d6c3c05082E52A768cCCFc5291"
 # contract address
 FLASH_LOAN_ARBITRAGE_ADDRESS = "0x1DCE9Fd484e00356D1E25134ad951bE6Ee093Df2"
 
-# Replace with your private key
-PRIVATE_KEY = "YOUR_PRIVATE_KEY"
+# Set via environment variable; never commit a real key
+PRIVATE_KEY = os.environ.get("PRIVATE_KEY", "YOUR_PRIVATE_KEY")
 
 
 # ABIs

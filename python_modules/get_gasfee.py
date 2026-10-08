@@ -2,11 +2,10 @@
 
 from web3 import Web3, HTTPProvider
 import time
-testnet = 'https://goerli.infura.io/v3/XXXXX'
-mainnet = 'https://mainnet.infura.io/v3/XXXXX'
+from common import RPC_URL
 
 # Connect to the Goerli testnet using a provider
-w3 = Web3(Web3.HTTPProvider(testnet))
+w3 = Web3(Web3.HTTPProvider(RPC_URL))
 
 def get_gas_price():
     return w3.eth.gas_price
